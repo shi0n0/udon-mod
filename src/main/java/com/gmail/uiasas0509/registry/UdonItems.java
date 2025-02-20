@@ -34,7 +34,7 @@ public class UdonItems {
                             .nutrition(1) // 満腹度の設定
                             .saturationModifier(0.4f) // 隠し満腹度（満腹時以降の満腹度）
                             .alwaysEdible() // 満腹でも食べられる
-                            .effect(new MobEffectInstance(MobEffects.REGENERATION, 100, 0), 1.0F)
+                            .effect(new MobEffectInstance(MobEffects.HEAL, 1, 2), 1.0F)
                             .build())));
     // 高級ぶっかけうどん
     public static final RegistryObject<Item> RICH_BUKKAKE_UDON =
@@ -57,7 +57,7 @@ public class UdonItems {
             ITEMS.register("rich_curry_udon", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(20) // 満腹度の設定
                     .saturationModifier(0.7f) // 隠し満腹度（満腹時以降の満腹度）
-                    .effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1.0F)
+                    .effect(new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1.0F) //
                     .build())));
 
     // 冷うどん
@@ -77,18 +77,37 @@ public class UdonItems {
 
     // きつねうどん
     public static final RegistryObject<Item> KITSUNE_UDON =
-            ITEMS.register("rich_cold_udon", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+            ITEMS.register("kitsune_udon", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(5) // 満腹度の設定
                     .saturationModifier(0.4f) // 隠し満腹度（満腹時以降の満腹度）
-                    .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1.0F) // 移動速度上昇
+                    .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0), 1.0F) // 移動速度上昇 30秒間
                     .build())));
+
     // 高級きつねうどん
     public static final RegistryObject<Item> RICH_KITSUNE_UDON =
-            ITEMS.register("rich_cold_udon", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+            ITEMS.register("rich_kitsune_udon", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
                     .nutrition(7) // 満腹度の設定
                     .saturationModifier(0.4f) // 隠し満腹度（満腹時以降の満腹度）
-                    .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 1), 1.0F)
+                    .effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1200, 1), 1.0F) // 移動速度上昇２ 1分間
                     .build())));
+
+    // ざるうどん
+    public static final RegistryObject<Item> ZARU_UDON =
+            ITEMS.register("zaru_udon", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(5) // 満腹度の設定
+                    .saturationModifier(0.4f) // 隠し満腹度（満腹時以降の満腹度）
+                    .fast()
+                    .build())));
+
+    // 高級ざるうどん
+    public static final RegistryObject<Item> RICH_ZARU_UDON =
+            ITEMS.register("rich_zaru_udon", () -> new Item(new Item.Properties().food(new FoodProperties.Builder()
+                    .nutrition(7) // 満腹度の設定
+                    .saturationModifier(0.4f) // 隠し満腹度（満腹時以降の満腹度）
+                    .effect(new MobEffectInstance(MobEffects.DIG_SPEED, 1200*5, 0), 1.0F) // 採掘速度上昇 5分間
+                    .fast()
+                    .build())));
+
     // レジストリをイベントバスに登録するためのメソッド
     public static void register(IEventBus eventBus)
     {

@@ -2,8 +2,17 @@
   "item.udonmod.flour": "小麦粉",
   "item.udonmod.dashi": "出汁の素",
   "item.udonmod.bukkake_udon": "ぶっかけうどん",
+  "item.udonmod.rich_bukkake_udon": "高級ぶっかけうどん",
   "item.udonmod.curry_udon": "カレーうどん",
+  "item.udonmod.rich_curry_udon": "高級カレーうどん",
   "item.udonmod.dry_udon": "乾燥うどん",
+  "item.udonmod.cold_udon": "冷うどん",
+  "item.udonmod.rich_cold_udon": "高級冷うどん",
+  "item.udonmod.zaru_udon": "ざるうどん",
+  "item.udonmod.rich_zaru_udon": "高級ざるうどん",
+  "item.udonmod.kitsune_udon": "きつねうどん",
+  "item.udonmod.rich_kitsune_udon": "高級きつねうどん",
+
   "creativetabs.udon_tab": "うどんMod"
 
 }
