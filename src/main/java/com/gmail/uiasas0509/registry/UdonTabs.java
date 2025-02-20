@@ -35,7 +35,9 @@ public class UdonTabs
                                     pOutput.accept(UdonItems.KITSUNE_UDON.get());       // きつねうどん
                                     pOutput.accept(UdonItems.RICH_KITSUNE_UDON.get());  // 高級きつねうどん
                                     pOutput.accept(UdonItems.ZARU_UDON.get());          // 冷うどん
-                                    pOutput.accept(UdonItems.RICH_ZARU_UDON.get());          // 冷うどん
+                                    pOutput.accept(UdonItems.RICH_ZARU_UDON.get());     // 冷うどん
+                                    pOutput.accept(UdonBlocks.STONE_MILL.get());        // 石臼
+
                                 }
                             )
                     .withSearchBar()
