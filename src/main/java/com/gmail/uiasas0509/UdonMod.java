@@ -67,6 +67,9 @@ public class UdonMod {
             event.accept(UdonItems.RICH_COLD_UDON);
             event.accept(UdonItems.KITSUNE_UDON);
             event.accept(UdonItems.RICH_KITSUNE_UDON);
+            event.accept(UdonItems.ZARU_UDON);
+            event.accept(UdonItems.RICH_ZARU_UDON);
+
 
         }
     }

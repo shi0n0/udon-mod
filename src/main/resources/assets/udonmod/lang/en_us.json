@@ -2,8 +2,17 @@
   "item.udonmod.flour": "flour",
   "item.udonmod.dashi": "dashi",
   "item.udonmod.bukkake_udon": "Bukkake Udon",
+  "item.udonmod.richbukkake_udon": "Rich Bukkake Udon",
   "item.udonmod.dry_udon": "Dry Udon",
   "item.udonmod.curry_udon": "Curry Udon",
+  "item.udonmod.rich_curry_udon": "Rich Curry Udon",
+  "item.udonmod.cold_udon": "Cold udon",
+  "item.udonmod.rich_cold_udon": "Rich Cold Udon",
+  "item.udonmod.zaru_udon": "Zaru Udon",
+  "item.udonmod.rich_zaru_udon": "Rich Zaru Udon",
+  "item.udonmod.kitsune_udon": "Kitsune Udon",
+  "item.udonmod.rich_kitsune_udon": "Kitsune Udon",
   "creativetabs.udon_tab": "Udon Mod"
+
 
 }
