@@ -1,10 +1,9 @@
 package com.gmail.uiasas0509;
 
-import com.gmail.uiasas0509.registry.UdonBlocks;
-import com.gmail.uiasas0509.registry.UdonItems;
-import com.gmail.uiasas0509.registry.UdonTabs;
+import com.gmail.uiasas0509.registry.*;
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -56,7 +55,13 @@ public class UdonMod {
             event.accept(UdonItems.FLOUR);
             event.accept(UdonItems.DADHI);
             event.accept(UdonItems.DRY_UDON);
-
+            event.accept(UdonItems.KATSUO_FLAKES);
+            event.accept(UdonItems.KATSUO);
+            event.accept(UdonItems.ICED_UDON);
+            event.accept(UdonItems.IWASHI);
+            event.accept(UdonItems.DRIED_IWASHI);
+            event.accept(UdonItems.DRIED_KATSUO);
+            event.accept(UdonItems.RICH_DASHI);
 
         }
         else if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS)
@@ -71,8 +76,14 @@ public class UdonMod {
             event.accept(UdonItems.RICH_KITSUNE_UDON);
             event.accept(UdonItems.ZARU_UDON);
             event.accept(UdonItems.RICH_ZARU_UDON);
-
-
+        }
+        else if (event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS)
+        {
+            event.accept(UdonBlocks.STONE_MILL);
+        }
+        else if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES)
+        {
+            event.accept(UdonItems.UDON_ROPE);
         }
     }
 
@@ -87,7 +98,6 @@ public class UdonMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
         }
     }
 }

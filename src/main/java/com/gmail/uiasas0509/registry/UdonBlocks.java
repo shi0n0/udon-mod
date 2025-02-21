@@ -20,7 +20,7 @@ public class UdonBlocks {
 
     // レジストリに登録
     public static final RegistryObject<Block> STONE_MILL =
-            registerBlockWithItem("stone_mill", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.COAL_BLOCK)));
+            registerBlockWithItem("stone_mill", () ->  new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONECUTTER)));
 
     // イベントバスに登録
     public static void register(IEventBus eventBus){
