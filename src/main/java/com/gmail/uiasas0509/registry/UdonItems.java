@@ -26,6 +26,32 @@ public class UdonItems {
     // 乾燥うどん
     public static final RegistryObject<Item> DRY_UDON =
             ITEMS.register("dry_udon", () -> new Item(new Item.Properties()));
+    // 冷凍うどん
+    public static final RegistryObject<Item> ICED_UDON =
+            ITEMS.register("iced_udon", () -> new Item(new Item.Properties()));
+    // にぼし（乾燥したいわし）
+    public static final RegistryObject<Item> DRIED_IWASHI =
+            ITEMS.register("dried_iwashi", () -> new Item(new Item.Properties()));
+    // いわし
+    public static final RegistryObject<Item> IWASHI=
+            ITEMS.register("iwashi", () -> new Item(new Item.Properties()));
+    // 鰹節
+    public static final RegistryObject<Item> DRIED_KATSUO =
+            ITEMS.register("dry_katsuo", () -> new Item(new Item.Properties()));
+    // 削り鰹節
+    public static final RegistryObject<Item> KATSUO_FLAKES =
+            ITEMS.register("katsuo_flakes", () -> new Item(new Item.Properties()));
+    // かつお
+    public static final RegistryObject<Item> KATSUO =
+            ITEMS.register("katsuo", () -> new Item(new Item.Properties()));
+    // うどんロープ
+    public static final RegistryObject<Item> UDON_ROPE =
+            ITEMS.register("udon_rope", () -> new Item(new Item.Properties()));
+    // 高級だし
+    public static final RegistryObject<Item> RICH_DASHI =
+            ITEMS.register("rich_dashi", () -> new Item(new Item.Properties()));
+
+
 
     // 食料（食べ物）
     // ぶっかけうどん
