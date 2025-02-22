@@ -18,7 +18,7 @@ public class UdonTabs
     public static final RegistryObject<CreativeModeTab> UDON_TAB =
             TABS.register("udon_tab", () -> CreativeModeTab.builder()
                     .title(Component.translatable("creativetabs.udon_tab")) //クリエイティブタブのタイトル
-                    .icon(UdonItems.FLOUR.get()::getDefaultInstance) // クリエイティブタブのアイコン
+                    .icon(UdonItems.BUKKAKE_UDON.get()::getDefaultInstance) // クリエイティブタブのアイコン
                     .displayItems( // クリエイティブタブに表示するアイテム
                             (pParameters, pOutput) ->
                                 {
@@ -45,8 +45,6 @@ public class UdonTabs
                                     pOutput.accept(UdonItems.IWASHI.get());
                                     pOutput.accept(UdonItems.RICH_DASHI.get());
                                     pOutput.accept(UdonItems.UDON_ROPE.get());
-
-
 
                                 }
                             )
