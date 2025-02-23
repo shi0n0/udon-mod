@@ -1,6 +1,7 @@
 package com.gmail.uiasas0509.registry;
 
-import com.gmail.uiasas0509.StoneMillBlock;
+import com.gmail.uiasas0509.block.custom.StoneMillBlock;
+import com.gmail.uiasas0509.block.custom.StoneMillBlockDeleted;
 import com.gmail.uiasas0509.UdonMod;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -21,7 +22,7 @@ public class UdonBlocks {
 
     // レジストリに登録
     public static final RegistryObject<Block> STONE_MILL =
-            registerBlock("stone_mill", () ->  new StoneMillBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONECUTTER)));
+            registerBlock("stone_mill", () ->  new StoneMillBlockDeleted(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK)));
 
     // イベントバスに登録
     public static void register(IEventBus eventBus){

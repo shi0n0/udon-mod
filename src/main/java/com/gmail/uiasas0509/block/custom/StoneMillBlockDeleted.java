@@ -10,8 +10,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class StoneMillBlock extends Block {
-    public StoneMillBlock(Properties properties){
+public class StoneMillBlockDeleted extends Block {
+    public StoneMillBlockDeleted(Properties properties){
         super(properties);
     }
 
