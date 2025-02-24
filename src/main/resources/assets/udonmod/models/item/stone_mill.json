@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/generated",
+  "textures": {
+    "all": "udonmod:block/stone_mill"
+  }
+}
