@@ -1,5 +1,6 @@
 package com.gmail.uiasas0509;
 
+import com.gmail.uiasas0509.block.entity.UdonBlockEntities;
 import com.gmail.uiasas0509.registry.UdonBlocks;
 import com.gmail.uiasas0509.registry.UdonItems;
 import com.gmail.uiasas0509.registry.UdonTabs;
@@ -37,6 +38,7 @@ public class UdonMod {
         UdonItems.register(modEventBus);
         UdonTabs.register(modEventBus);
         UdonBlocks.register(modEventBus);
+        UdonBlockEntities.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
